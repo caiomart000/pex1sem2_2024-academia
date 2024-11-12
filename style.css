@@ -1,0 +1,30 @@
+.bg-container {
+  background-image: url('./imgs/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Escurecimento */
+  z-index: 1;
+}
+
+.z-2 {
+  position: relative;
+  z-index: 2; /* Mantém o texto acima da camada de escurecimento */
+}
+
+.btn {
+  width: 150px;
+  position: relative;
+}
