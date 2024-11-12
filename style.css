@@ -1,4 +1,16 @@
-.bg-container {
+body {
+  background-color: #33242b;
+}
+
+.navbar {
+  background-color: white;
+  color: black;
+}
+.nav-link,
+.h3 {
+  color: white;
+}
+.bg-container-1 {
   background-image: url('./imgs/hero.jpg');
   background-size: cover;
   background-position: center;
@@ -27,4 +39,50 @@
 .btn {
   width: 150px;
   position: relative;
+}
+
+.card-header {
+  background-color: #ff9317;
+}
+
+.bg-container-2 {
+  background-color: #ff9317;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.beneficio_container {
+  align-items: center;
+}
+
+.beneficio {
+  height: 2rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.icons {
+  width: 40px;
+  height: auto;
+}
+
+.icone-branco {
+  filter: invert(1) brightness(2); /* Inverte a cor e aumenta o brilho */
+}
+.cor-vemelha {
+  background-color: #ff006f;
+}
+.footer {
+  color: white;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  margin-left: 70%;
 }
