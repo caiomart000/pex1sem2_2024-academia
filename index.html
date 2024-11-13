@@ -8,6 +8,9 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Super Boa forma - Academia</title>
 
@@ -17,16 +20,16 @@
   <!-- nav -->
   <nav class="navbar navbar-expand-lg">
     <a class="h3" href="#"><img src="./imgs/logo.png" class="logo" alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+    <button class="navbar-toggler navbar-dark bg-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse " id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">A academia <span class="sr-only"></span></a>
+          <a class="nav-link badge badge-danger p-3 mr-3 mb-2" href="#modalidades">Academia<span class="sr-only"></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Matricule-se</a>
+          <a class="nav-link badge badge-danger p-3 active" href="#contato">Matricule-se</a>
         </li>
 
       </ul>
@@ -38,11 +41,11 @@
     <div class="overlay"></div> <!--escurecer imagem-->
     <h3 class="z-2">Super Boa Forma Academia</h3>
     <h4 class="z-2">A melhor academia da região</h4>
-    <button type="button" class="btn btn-outline-light btn-lg mx-auto z-2">Matricule-se</button>
+    <button type="button" class="btn btn-outline-light btn-lg mx-auto z-2"><a href="#contato">Matricule-se</a></button>
   </div>
 
   <!-- modalidades -->
-  <div class="card-group container-fluid mt-1">
+  <div class="card-group container-fluid mt-4" id="modalidades">
     <div class="card mx-2">
       <div class="card-header text-center">Cross Training</div>
       <img class="card-img-top" src="imgs/card1.jpg" alt="Imagem de capa do card">
@@ -68,39 +71,44 @@
 
   <!-- planos -->
   <div class="planos">
-    <h3 class="z-2 text-center mt-5">Planos</h3>
-    <div class="card-group col-sm">
-      <div class="card text-center">
-        <div class="card-header">
-          Mensal
-        </div>
-        <div class="card-body d-flex flex-column justify-content-center align-items-center">
-          <h5 class="card-title">R$129,90</h5>
-          <p class="card-text">Acesso ilimitado a todas a modalidades disponiveis<br>Valor por mês.</p>
-          <a href="#" class="btn btn-primary">Contratar</a>
+    <h3 class="planos-text z-2 text-center mt-5">Planos</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-sm-4">
+        <div class="card card-planos text-center">
+          <div class="card-header">
+            Mensal
+          </div>
+          <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <h5 class="card-title">R$129,90</h5>
+            <p class="card-text">Acesso ilimitado a todas a modalidades disponiveis<br>Valor por mês.</p>
+            <a href="#contato" class="btn btn-primary">Contratar</a>
+          </div>
         </div>
       </div>
-      <div class="card text-center">
-        <div class="card-header">
-          Trimestral
-        </div>
-        <div class="card-body d-flex flex-column justify-content-center align-items-center">
-          <h5 class="card-title">99,90/mês</h5>
-          <p class="card-text">Acesso ilimitado a todas a modalidades disponiveis. <br>Desconto de R$29,90/mês! </p>
-          <p></p>
-          <a href="#" class="btn btn-primary">Contratar</a>
+      <div class="col-md-4 col-sm-4">
+        <div class="card card-planos text-center">
+          <div class="card-header">
+            Trimestral
+          </div>
+          <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <h5 class="card-title">99,90/mês</h5>
+            <p class="card-text">Acesso ilimitado a todas a modalidades disponiveis. <br>Desconto de R$29,90/mês! </p>
+            <p></p>
+            <a href="#contato" class="btn btn-primary">Contratar</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- contato e siga-nos -->
-  <div class="contatoEsiganos container-fluid bg-container-2 d-flex flex-column text-center justify-content-center position-relative">
+  <div class="contatoEsiganos container-fluid bg-container-2 d-flex flex-column text-center justify-content-center position-relative" id="contato">
     <!-- <div class="overlay"></div> escurecer imagem -->
     <div class="row">
       <div class="col col-lg-6">
-        <h3>Instagram <img src="https://img.icons8.com/?size=100&id=0wr4dYtBFwHA&format=png&color=000000" class="icone-branco icons" alt=""></h3><br>
-        <p>Aceitamos</p><br>
+        <a href="https://www.instagram.com/superboaformaacademia/" target="_blank">
+          <h3 class="instagram"><img src="https://img.icons8.com/?size=100&id=0wr4dYtBFwHA&format=png&color=000000" class="icone-branco icons" alt="">Instagram </h3>
+        </a><br>
         <div class="beneficio_container ">
           <img class="img-fluid beneficio" src="./imgs/totalpass.svg" alt=""><br><br>
           <img class="img-fluid beneficio" src="./imgs/wellhub-logo.svg" alt="">
@@ -109,10 +117,10 @@
       <div class="col ">
         <h3>Contato</h3>
         <div class="row text-center justify-content-center">
-          <p><img src="https://img.icons8.com/?size=100&id=85088&format=png&color=000000" class="icone-branco icons"> (11)95938-7154<br>Av. Rubens Caramez, 641 - Centro <br>Itapevi - SP</p>
+          <a href="https://api.whatsapp.com/send/?phone=5511980168085" target="_blank">
+            <p><img src="https://img.icons8.com/?size=100&id=85088&format=png&color=000000" class="icone-branco icons">(11)95938-7154
+          </a><br>Av. Rubens Caramez, 641 - Centro <br>Itapevi - SP</p>
         </div>
-
-
       </div>
     </div>
   </div>

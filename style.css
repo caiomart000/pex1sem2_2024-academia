@@ -1,5 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+
 body {
-  background-color: #33242b;
+  background-color: black;
 }
 
 .navbar {
@@ -8,7 +14,7 @@ body {
 }
 .nav-link,
 .h3 {
-  color: white;
+  color: black;
 }
 .bg-container-1 {
   background-image: url('./imgs/hero.jpg');
@@ -42,15 +48,19 @@ body {
 }
 
 .card-header {
-  background-color: #ff9317;
+  background-color: #be3100;
+}
+
+.card {
+  border: none;
 }
 
 .bg-container-2 {
-  background-color: #ff9317;
+  background-color: #be3100;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 450px;
   color: white;
   position: relative;
   overflow: hidden;
@@ -60,6 +70,21 @@ body {
   align-items: center;
 }
 
+.planos {
+  margin: 15px;
+}
+.planos-text {
+  color: white;
+}
+.card-planos {
+  border: none;
+  min-height: 300px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  color: white;
+}
 .beneficio {
   height: 2rem;
   width: auto;
@@ -73,6 +98,17 @@ body {
 
 .icone-branco {
   filter: invert(1) brightness(2); /* Inverte a cor e aumenta o brilho */
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: white;
 }
 .cor-vemelha {
   background-color: #ff006f;
