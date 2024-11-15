@@ -33,7 +33,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Escurecimento */
+  background-color: rgba(0, 0, 0, 0.3); /* Escurecimento */
   z-index: 1;
 }
 
@@ -96,8 +96,17 @@ body {
   height: auto;
 }
 
+.icon-totalpass {
+  width: 200px;
+}
+.contato .card {
+  color: white;
+  font-size: 20px;
+  background-color: black;
+  margin-bottom: 0px;
+}
 .icone-branco {
-  filter: invert(1) brightness(2); /* Inverte a cor e aumenta o brilho */
+  filter: invert(1) brightness(2);
   margin-right: 10px;
 }
 
@@ -110,15 +119,38 @@ a:hover {
   text-decoration: underline;
   color: white;
 }
-.cor-vemelha {
-  background-color: #ff006f;
-}
 .footer {
   color: white;
+  background-color: #be3100;
+  margin: 0px;
+  padding-top: 15px;
+  border-radius: 5px 5px 0 0;
 }
 
 .logo {
   height: 50px;
   width: auto;
   margin-left: 70%;
+}
+
+@media (min-width: 360px) {
+  .card-contato {
+    border-bottom: 1px solid grey;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-link {
+    margin: 5px 0 0 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar .navbar-toggler,
+  .navbar .h3 {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
